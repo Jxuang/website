@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <title>Red Lantern Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body class="bg-light">
+
+    <!-- 導覽列 Header -->
+    <header id="masthead" class="container my-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <h1 class="mb-3 mb-md-0">
+                <img alt="Red Lantern logo" src="images/rl_logo.png" class="img-fluid" />
+            </h1>
+            <nav class="navbar navbar-expand-md navbar-dark bg-danger rounded px-3 w-100 w-md-auto">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" title="Red Lantern home" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" title="Design services" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" title="Our work" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" title="Contact Red Lantern" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要內容 Main Content -->
+    <article id="mainContent" class="container bg-white p-4 shadow-sm rounded">
+        
+        <!-- 標題橫幅 -->
+        <section id="titleBar" class="mb-4 text-center">
+            <img alt="tokyo buildings" src="images/tokyo.jpg" class="img-fluid rounded mb-3" />
+            <h1 class="h3 fw-bold">Red Lantern builds unique interfaces <span class="amp">&amp;</span> user experiences for the web.</h1>
+        </section>
+
+        <!-- 內文與側邊欄網格 (Row) -->
+        <div class="row g-4" id="firstRow">
+            <!-- 左側/上方文字區塊 -->
+            <section id="content" class="col-lg-6 col-12">
+                <h2 class="h4 fw-bold">Welcome to the New Red Lantern Design</h2>
+                <p>Red Lantern is a small web design and consulting firm specializing in standards-based web design and development. Our goal is to build simple, beautiful webpages that make your information easy to find and your users happy.</p>
+                <p>If you or your company is interested in working with us, please check out our portfolio of design and branding work and contact us with your project details. We look forward to hearing from you and making your presence on the web a little simpler and easier to find.</p>
+                <ul id="link-list" class="list-unstyled">
+                    <li class="mb-2">
+                        <!-- Bootstrap 5 的 Modal 觸發按鈕 -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                            View our full portfolio
+                        </button>
+                    </li>
+                    <li><a class="text-decoration-none" title="Contact Red Lantern" href="#">Contact Red Lantern</a></li>
+                </ul>
+            </section>
+
+            <!-- 右側/下方作品集區塊 -->
+            <section id="sidebar" class="col-lg-6 col-12 bg-light p-3 rounded">
+                <h2 class="h4 fw-bold border-bottom pb-2 mb-3">Our Work</h2>
+                <div id="port" class="row g-3">
+                    <div class="col-6"><img class="img-fluid rounded" alt="comp0" src="images/markinjapan.jpg" /></div>
+                    <div class="col-6"><img class="img-fluid rounded" alt="comp1" src="images/a2g.jpg" /></div>
+                    <div class="col-6"><img class="img-fluid rounded" alt="comp2" src="images/foobar.jpg" /></div>
+                    <div class="col-6"><img class="img-fluid rounded" alt="comp3" src="images/rpm.jpg" /></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap 5 互動視窗 (Modal) -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- 頁尾 Footer -->
+    <footer id="footer" class="text-center py-4 text-muted">
+        <p class="mb-0">Copyright &copy; Red Lantern Design, all rights reserved.</p>
+    </footer>
+
+</body>
+</html>
